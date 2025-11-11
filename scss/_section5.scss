@@ -1,0 +1,19 @@
+.car-img {
+  height: 810px;
+  background-image: url("../images/section5-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .car-img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .car-img {
+    height: 300px;
+  }
+}

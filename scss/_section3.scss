@@ -1,0 +1,147 @@
+@import "./variables";
+
+.lexoZ {
+  height: 801px;
+  color: beige;
+  display: flex;
+  background-color: $page-bg;
+  width: 100%;
+
+  .lexoZ-content {
+    width: 471px;
+    height: 457px;
+    margin: auto auto auto 134px;
+    h2 {
+      font-weight: 400;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      width: 383px;
+      height: 45px;
+    }
+    p {
+      width: 300px;
+      height: 160px;
+      font-weight: 400;
+      font-size: 13.5px;
+    }
+  }
+
+  .lexoZ-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+
+    button {
+      width: 171.75px;
+      height: 57px;
+      background-color: $color-primary;
+      margin-right: 49px;
+    }
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: $color-primary;
+    }
+  }
+
+  .lexoZ-img {
+    width: 713px;
+    height: 809px;
+    background-image: url("../images/lexoZ-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -4px auto auto;
+    justify-content: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .lexoZ {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 20px 0;
+    overflow-x: hidden;
+  }
+
+  .lexoZ-content {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    position: static;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .lexoZ-actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .lexoZ-content h3,
+  .lexoZ-content p {
+    width: auto;
+    margin: 0 auto 20px;
+    height: auto;
+  }
+
+  .lexoZ-content h2 {
+    font-size: 36px;
+  }
+
+  .lexoZ-actions button,
+  .lexoZ-actions a {
+    min-width: 120px;
+    margin: 0 10px;
+  }
+
+  .lexoZ-img {
+    width: 90%;
+    height: 450px;
+    background-size: contain;
+    margin: 30px auto 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lexoZ {
+    overflow-x: hidden;
+  }
+
+  .lexoZ-content {
+    align-items: center;
+  }
+
+  .lexoZ-actions {
+    margin-top: 15px;
+
+    button,
+    a {
+      min-width: 100px;
+      margin: 0 5px;
+    }
+  }
+
+  .lexoZ-content h2 {
+    font-size: 28px;
+  }
+  .lexoZ-content p {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .lexoZ-img {
+    width: 90%;
+    max-width: 100%;
+    height: 300px;
+    margin: 15px auto 0;
+    margin-top: 10px;
+  }
+}

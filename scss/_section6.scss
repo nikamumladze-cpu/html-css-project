@@ -1,0 +1,124 @@
+@import "./variables";
+
+.car-stats {
+  height: 525px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $page-bg;
+
+  .hp,
+  .range,
+  .charge,
+  .Acceleration {
+    height: 178.5px;
+    text-align: center;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h5 {
+      width: auto;
+      height: auto;
+      font-weight: 400;
+      font-size: 12px;
+      color: $color-primary;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 48px;
+      text-align: center;
+      color: $color-primary;
+      margin: auto;
+    }
+    p {
+      font-weight: 275;
+      font-size: 36px;
+      text-align: center;
+      color: $color-primary;
+    }
+  }
+
+  .hp {
+    width: 137px;
+  }
+  .range {
+    width: 160px;
+  }
+  .charge {
+    width: 171px;
+  }
+  .Acceleration {
+    width: 63px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-stats {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .hp,
+  .range,
+  .charge,
+  .Acceleration {
+    width: 45%;
+    height: 150px;
+    margin: 10px 0;
+  }
+
+  .hp h2,
+  .range h2,
+  .charge h2,
+  .Acceleration h2 {
+    font-size: 36px;
+  }
+  .hp p,
+  .range p,
+  .charge p,
+  .Acceleration p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .car-stats {
+    padding: 30px 0;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .hp,
+  .range,
+  .charge,
+  .Acceleration {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .hp:last-child,
+  .range:last-child,
+  .charge:last-child,
+  .Acceleration:last-child {
+    border-bottom: none;
+  }
+
+  .hp h2,
+  .range h2,
+  .charge h2,
+  .Acceleration h2 {
+    font-size: 30px;
+  }
+  .hp p,
+  .range p,
+  .charge p,
+  .Acceleration p {
+    font-size: 18px;
+  }
+}
