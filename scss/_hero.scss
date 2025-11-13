@@ -11,7 +11,12 @@
 
   button {
     margin-top: 648px;
-    background-color: transparent;
+    background: #9eb5b5;
+    background: linear-gradient(
+      90deg,
+      rgba(158, 181, 181, 1) 0%,
+      rgba(51, 107, 74, 1) 50%
+    );
     border: 2px solid gray;
     padding: 15px 30px;
     cursor: pointer;
@@ -24,7 +29,7 @@
 
     a {
       text-decoration: none;
-      color: grey;
+      color: $color-primary;
       font-weight: 700;
       transition: color 0.3s ease;
 
