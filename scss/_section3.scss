@@ -2,7 +2,7 @@
 
 .lexoZ {
   height: 801px;
-  color: beige;
+  color: $color-primary;
   display: flex;
   background-color: $page-bg;
   width: 100%;
@@ -10,7 +10,7 @@
   .lexoZ-content {
     width: 471px;
     height: 457px;
-    margin: auto auto auto 134px;
+    margin-left: 20px;
     h2 {
       font-weight: 400;
       font-size: 48px;
@@ -25,26 +25,44 @@
       height: 160px;
       font-weight: 400;
       font-size: 13.5px;
+      line-height: 1.5;
     }
-  }
 
-  .lexoZ-actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 30px;
+    .lexoZ-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 30px;
 
-    button {
-      width: 171.75px;
-      height: 57px;
-      background-color: $color-primary;
-      margin-right: 49px;
-    }
-    a {
-      font-weight: 400;
-      font-size: 18px;
-      text-align: center;
-      color: $color-primary;
+      button {
+        width: 171.75px;
+        height: 57px;
+        font-size: 18px;
+        border-radius: 7px;
+        background-color: $color-primary;
+        color: $blackfontcolor;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: $color-secondary;
+          color: $color-primary;
+        }
+      }
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: $color-primary;
+        margin-left: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
     }
   }
 
@@ -74,14 +92,13 @@
     height: auto;
     text-align: center;
     position: static;
-    margin: 0 auto;
     padding-top: 30px;
-  }
 
-  .lexoZ-actions {
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+    .lexoZ-actions {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+    }
   }
 
   .lexoZ-content h3,
@@ -102,11 +119,10 @@
   }
 
   .lexoZ-img {
-    width: 90%;
+    width: 70%;
     height: 450px;
     background-size: contain;
     margin: 30px auto 0;
-    margin-top: 20px;
   }
 }
 

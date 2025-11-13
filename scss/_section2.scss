@@ -1,12 +1,17 @@
 @import "./variables";
 .product-section {
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
   padding: 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $page-bg;
+
+  img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
 
   .product-content-wrapper {
     width: 100%;
@@ -50,9 +55,10 @@
 
 @media (max-width: 768px) {
   .product-section {
-    width: 100%; 
-  }
-  .product-section .product-content-wrapper {
-    max-width: 90%;
+    width: 100%;
+
+    .product-content-wrapper {
+      max-width: 90%;
+    }
   }
 }

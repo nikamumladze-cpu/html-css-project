@@ -2,25 +2,28 @@
   height: 899px;
   display: flex;
   flex-direction: column;
-  background-color: red;
   .AirX-white-content {
-    margin: auto auto 47px 134px;
+    margin: auto;
     position: absolute;
+    margin-left: 20px;
 
     h2 {
       font-weight: 400;
       font-size: 50px;
 
-      margin-bottom: 4px;
+      margin-bottom: 20px;
       margin-top: 173px;
     }
     h3 {
       font-weight: 400;
       font-size: 36.32px;
+      margin-bottom: 20px;
     }
     p {
       font-weight: 400;
       font-size: 16.34px;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     .AirX-white-actions {
@@ -30,6 +33,7 @@
     button {
       width: 207px;
       height: 69px;
+      border-radius: 7px;
       background-color: #000000;
       color: #fff;
       font-weight: 400;
@@ -66,9 +70,11 @@
     margin: 0 auto;
     position: static;
     text-align: center;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
   }
 
   .AirX-white-content h2,
@@ -78,10 +84,12 @@
 
   .AirX-white-content h2 {
     font-size: 20px;
+    margin: auto;
   }
   .AirX-white-content h3 {
     font-size: 10px;
     line-height: 1.5;
+    margin: auto;
   }
   .AirX-white-content p {
     font-size: 14px;
@@ -126,6 +134,7 @@
 
   .AirX-white-content {
     box-sizing: border-box;
+    margin: auto;
     padding: 0 5%;
     margin: auto;
   }
@@ -133,8 +142,7 @@
   .AirX-white-content h2 {
     width: auto;
     font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: auto;
   }
   .AirX-white-content h3 {
     font-size: 18px;

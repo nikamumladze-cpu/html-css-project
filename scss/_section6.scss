@@ -3,9 +3,16 @@
 .car-stats {
   height: 525px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
   background-color: $page-bg;
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 
   .hp,
   .range,
@@ -13,10 +20,28 @@
   .Acceleration {
     height: 178.5px;
     text-align: center;
-    margin: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    cursor: default;
+    padding-bottom: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $color-primary;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
 
     h5 {
       width: auto;
@@ -30,7 +55,6 @@
       font-size: 48px;
       text-align: center;
       color: $color-primary;
-      margin: auto;
     }
     p {
       font-weight: 275;
@@ -41,33 +65,55 @@
   }
 
   .hp {
-    width: 137px;
+    width: 171px;
   }
   .range {
-    width: 160px;
+    width: 171px;
   }
   .charge {
     width: 171px;
   }
   .Acceleration {
-    width: 63px;
+    width: 171px;
   }
 }
 
 @media (max-width: 768px) {
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
   .car-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .hp,
   .range,
   .charge,
   .Acceleration {
-    width: 45%;
+    width: 48%;
     height: 150px;
     margin: 10px 0;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .hp,
+  .charge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .hp h2,
@@ -75,20 +121,34 @@
   .charge h2,
   .Acceleration h2 {
     font-size: 36px;
+    text-align: center;
+    margin: 5px 0;
   }
   .hp p,
   .range p,
   .charge p,
   .Acceleration p {
     font-size: 24px;
+    text-align: center;
   }
 }
 
 @media (max-width: 500px) {
   .car-stats {
     padding: 30px 0;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
   }
 
   .hp,
@@ -96,17 +156,20 @@
   .charge,
   .Acceleration {
     width: 80%;
-    height: 100px;
-    margin: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    padding-top: 5px;
   }
 
-  .hp:last-child,
-  .range:last-child,
-  .charge:last-child,
-  .Acceleration:last-child {
+  .Acceleration {
     border-bottom: none;
+    padding-bottom: 0;
   }
 
   .hp h2,

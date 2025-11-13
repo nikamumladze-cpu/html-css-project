@@ -1,17 +1,36 @@
 $color-primary: #fffffb;
 $color-secondary: #aaaaaa;
+$blackfontcolor: #1a1a1a;
 $header-bg: #1a1a1a;
-$page-bg: #101010; 
+$page-bg: #101010;
 
 $font-family: "Poppins", sans-serif;
 $header-height: 97.5px;
 $container-width: 1230px;
-$padding-top-header: 36px; 
+$padding-top-header: 36px;
 
 $hero-height: 802px;
-$hero-bg-image: "../images/mainbg.png"; 
+$hero-bg-image: "../images/mainbg.png";
 $test-drive-color: #ffffff;
 
+$color-placeholder: rgba(255, 255, 255, 0.6);
+$input-border-size: 1px;
+$arrow-symbol: "\2192";
+$gap-between-columns: 40px;
+
+@mixin reset-element {
+  background: none;
+  border: none;
+  outline: none;
+  color: $color-primary;
+}
+html,
+body {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 body {
   font-family: $font-family;
   margin: 0;

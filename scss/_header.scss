@@ -28,6 +28,7 @@ nav {
     li a {
       text-decoration: none;
       color: $color-primary;
+      transition: color 0.3s ease;
 
       &:hover {
         color: $color-secondary;
@@ -44,6 +45,7 @@ nav {
     a {
       text-decoration: none;
       color: $color-primary;
+      transition: color 0.3s ease;
 
       &:hover {
         color: $color-secondary;

@@ -1,0 +1,136 @@
+.AirX {
+  height: 633.7499389648438px;
+  background-image: url("../images/Air X Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .AirX-content {
+    position: relative;
+    z-index: 3;
+    padding-top: 356px;
+    padding-left: 20px;
+
+    h2 {
+      font-weight: 400;
+      font-size: 48px;
+      color: $color-primary;
+      width: 105px;
+      height: 72px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 27px;
+      color: $color-primary;
+      margin-bottom: 19px;
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 43px;
+    }
+
+    button {
+      width: 177px;
+      height: 57px;
+      background-color: $color-primary;
+      border-radius: 7px;
+      border: 0;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: $blackfontcolor;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $blackfontcolor;
+        color: $color-primary;
+      }
+    }
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: $color-primary;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 250px;
+      padding-left: 15px;
+
+      h2 {
+        font-size: 38px;
+        width: 100%;
+        height: auto;
+      }
+      p {
+        font-size: 22px;
+      }
+      .btn-group {
+        gap: 30px;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      padding-top: 150px;
+      padding-left: 10px;
+
+      h2 {
+        font-size: 30px;
+        width: auto;
+      }
+      p {
+        font-size: 18px;
+      }
+      .btn-group {
+        align-items: center;
+        gap: 20px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+      }
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+
+  @media (max-width: 500px) {
+    height: 400px;
+  }
+}

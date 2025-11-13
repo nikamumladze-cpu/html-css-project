@@ -1,0 +1,100 @@
+.our-stories {
+  height: auto;
+  background-color: $page-bg;
+
+  h3 {
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-primary;
+    padding-top: 129px;
+    margin-bottom: 57px;
+    padding-left: 66px;
+  }
+
+  .stories {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .story {
+    width: 318px;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $color-primary;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 18px;
+      color: $color-primary;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 13.5px;
+      color: $color-primary;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h3 {
+      padding-top: 60px;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .stories {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .story {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h3 {
+      padding-top: 40px;
+      font-size: 24px;
+    }
+
+    .story h2 {
+      font-size: 16px;
+    }
+
+    .story p {
+      font-size: 13px;
+    }
+  }
+}
