@@ -6,7 +6,7 @@
     margin: auto;
     position: absolute;
     margin-left: 20px;
-
+    z-index: 1;
     h2 {
       font-weight: 400;
       font-size: 50px;
@@ -49,6 +49,7 @@
     }
   }
   .AirX-white-img {
+    position: relative;
     height: 579px;
     background-image: url("../images/AirX-white-bg.svg");
     background-position: center;
